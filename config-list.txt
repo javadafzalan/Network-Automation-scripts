@@ -1,0 +1,21 @@
+ip domain-name javad.afzalan
+ip device tracking
+clock timezone TEH 3 30
+ntp server 10.10.10.20
+logging buffered informational
+logging monitor informational
+login on-failure log
+login on-success log
+archive
+ log config
+  logging enable
+  logging size 200
+  notify syslog contenttype plaintext
+logging trap notifications
+logging host 10.10.10.10
+snmp-server community cisco RO
+snmp-server enable traps
+snmp-server host 10.10.10.10 version 2c cisco
+mac address-table notification change interval 5
+mac address-table notification change history-size 10
+mac address-table notification change

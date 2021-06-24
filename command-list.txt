@@ -1,0 +1,11 @@
+show ip interface brief
+show spanning-tree
+show etherchannel summary
+show ip route
+show ip eigrp neighbors
+show cdp neighbors
+show cdp neighbors detail
+show vlan brief
+show interfaces trunk
+show interface status
+show inventory
